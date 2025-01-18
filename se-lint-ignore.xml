@@ -1,56 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <se-lint-ignore>
-	<file path="uncopyright.xhtml">
+	<file path="memory.xhtml">
 		<ignore>
-			<code>s-022</code>
-			<reason>translated contents</reason>
+			<code>s-033</code>
+			<reason>dual-language document</reason>
 		</ignore>
 	</file>
-	<file path="content.opf">
+
+	<!-- CONTENT -->	
+
+	<!-- TITLEPAGE -->
+	<file path="titlepage.xhtml">
 		<ignore>
-			<code>m-009</code>
-			<reason>Non-SE hosted.</reason>
+			<code>s-021</code>
+			<reason>title not in English</reason>
+		</ignore>
+	</file>
+
+	<!-- COLOPHON -->
+	<file path="colophon.xhtml">
+		<ignore>
+			<code>s-048</code>
+			<reason>italics used to signify language change when applied to short story</reason>
 		</ignore>
 	</file>
 	<file path="colophon.xhtml">
 		<ignore>
-			<code>s-012</code>
-			<reason>intended for appearance</reason>
+			<code>s-060</code>
+			<reason>italics used to signify language change when applied to short story</reason>
 		</ignore>
 	</file>
-	<file path="memory.xhtml">
+	<file path="colophon.xhtml">
 		<ignore>
-			<code>s-033</code>
-			<reason>mixed-language document</reason>
+			<code>t-011</code>
+			<reason>no end punctuation as not using complete sentences</reason>
+		</ignore>
+	</file>
+	<file path="colophon.xhtml">
+		<ignore>
+			<code>y-003</code>
+			<reason>no end punctuation as not using complete sentences</reason>
 		</ignore>
 	</file>
 
 	<!-- SVG FILES -->
-	<file path="logo.svg">
-		<ignore>
-			<code>x-004</code>
-			<reason>Custom logo.</reason>
-		</ignore>
-	</file>
-	<file path="logo.svg">
-		<ignore>
-			<code>x-014</code>
-			<reason>Custom logo.</reason>
-		</ignore>
-	</file>
 	<file path="titlepage.svg">
 		<ignore>
 			<code>s-003</code>
 			<reason>special case, reader</reason>
 		</ignore>
 	</file>
-
-	<!-- DISTRIBUTION FILES -->
-	<file path="*.*">
+	<file path="cover.svg">
 		<ignore>
-			<code>f-001</code>
-			<reason>distribution files</reason>
+			<code>s-028</code>
+			<reason>cover.svg and titlepage.svg title elements don't match</reason>
 		</ignore>
 	</file>
 

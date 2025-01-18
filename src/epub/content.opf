@@ -4,8 +4,9 @@
 		<dc:identifier id="uid">url:https://github.com/kingrpaul/howard-phillips-lovecraft_memoro</dc:identifier>
 		<dc:date>2024-09-20T18:00:00Z</dc:date>
 		<meta property="dcterms:modified">2024-09-20T18:00:00Z</meta>
-		<dc:rights>The source text and artwork in this ebook (except as noted) are believed to be in the United States public domain; that is, they are believed to be free of copyright restrictions in the United States. They may still be copyrighted in other countries, so users located outside of the United States must check their local laws before using this ebook. The creators of, and contributors to, this ebook dedicate their contributions to the worldwide public domain via the terms in the [CC0 1.0 Universal Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
-		<dc:publisher id="publisher">Standard Ebooks</dc:publisher>
+		<dc:rights>Except as otherwise noted, the sources used in this ebook are believed to be in the US public domain. The ebook itself is dedicated to to the worldwide public domain CC0 1.0 (https://creativecommons.org/publicdomain/zero/1.0/).</dc:rights>
+		<!-- 	PUBLISH -->
+		<dc:publisher id="publisher">Paul King</dc:publisher>
 		<meta property="file-as" refines="#publisher">King, Paul</meta>
 		<meta property="se:url.homepage" refines="#publisher">https://kingrpaul.github.io</meta>
 		<meta property="role" refines="#publisher" scheme="marc:relators">bkd</meta>
@@ -15,9 +16,8 @@
 		<meta property="file-as" refines="#type-designer">League of Moveable Type, The</meta>
 		<meta property="se:url.homepage" refines="#type-designer">https://www.theleagueofmoveabletype.com</meta>
 		<meta property="role" refines="#type-designer" scheme="marc:relators">tyd</meta>
-		<!-- ***** -->
+		<!-- ACCESSIBILITY -->
 		<meta id="conformance-statement" property="dcterms:conformsTo">EPUB Accessibility 1.1 - WCAG 2.2 Level AA</meta>
-		<meta property="a11y:certifiedBy" refines="#conformance-statement">Standard Ebooks</meta>
 		<meta property="schema:accessMode">textual</meta>
 		<meta property="schema:accessMode">visual</meta>
 		<meta property="schema:accessModeSufficient">textual</meta>
@@ -29,53 +29,55 @@
 		<meta property="schema:accessibilityHazard">none</meta>
 		<meta property="schema:accessibilitySummary">This publication conforms to WCAG 2.2 Level AA.</meta>
 		<link href="onix.xml" media-type="application/xml" properties="onix" rel="record"/>
-		<!-- ***** -->
+		<!-- DESCRIPTION -->
 		<dc:title id="title">Memoro</dc:title>
 		<meta property="file-as" refines="#title">Memoro</meta>
 		<meta property="se:subject">Fiction</meta>
 		<meta property="se:subject">Shorts</meta>
-		<!-- <meta property="authority" refines="#subject-1">LCSH</meta>
-		<meta property="term" refines="#subject-1">LCSH_ID_1</meta>
-		<meta property="authority" refines="#subject-2">LCSH</meta>
-		<meta property="term" refines="#subject-2">LCSH_ID_2</meta> -->
-		<dc:description id="description">This e-book contains Memory, both in the original English and an Esperanto translation and is intended for Esperanto learners.</dc:description>
+		<dc:description id="description">A dual-language Esperanto-English translation of Memory.</dc:description>
 		<meta id="long-description" property="se:long-description" refines="#description">
-			&lt;p&gt;This e-book contains Memory, both in the original English and an Esperanto translation and is intended for Esperanto learners.&lt;/p&gt;
+			&lt;p&gt;A dual-language Esperanto-English translation of Memory.&lt;/p&gt;
 		</meta>
 		<dc:language>eo</dc:language>
+		<!-- SOURCES -->
 		<dc:source>https://en.wikisource.org/wiki/Memory_(Lovecraft)</dc:source>
-		<!-- <dc:source>IA_URL</dc:source> -->
 		<meta property="se:production-notes">None.</meta>
-		<meta property="se:word-count">695</meta>
-		<meta property="se:reading-ease.flesch">50.77</meta>
-		<meta property="se:url.encyclopedia.wikipedia">https://en.wikipedia.org/wiki/Memory_(H._P._Lovecraft)</meta>
-		<meta property="se:url.vcs.github">https://github.com/kingrpaul/howard-phillips-lovecraft_memoro</meta>
+		<!-- AUTHOR -->
 		<dc:creator id="author">H. P. Lovecraft</dc:creator>
 		<meta property="file-as" refines="#author">Lovecraft, H. P.</meta>
 		<meta property="se:name.person.full-name" refines="#author">Howard Phillips Lovecraft</meta>
 		<meta property="se:url.encyclopedia.wikipedia" refines="#author">https://en.wikipedia.org/wiki/Howard_Phillips_Lovecraft</meta>
 		<meta property="se:url.authority.nacoaf" refines="#author">http://id.loc.gov/authorities/names/n80017007</meta>
 		<meta property="role" refines="#author" scheme="marc:relators">aut</meta>
+		<!-- TRANSCRIBER -->
+		<dc:contributor id="transcriber-1">Anonima</dc:contributor>
+		<meta property="file-as" refines="#transcriber-1">Anonima</meta>
+		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta>
+		<!-- COVER ART -->
 		<dc:contributor id="artist">Tareq Aziz Touhid</dc:contributor>
 		<meta property="file-as" refines="#artist">Touhid, Tareq Aziz</meta>
-		<!-- <meta property="se:url.encyclopedia.wikipedia" refines="#artist">COVER_ARTIST_WIKI_URL</meta> -->
-		<!-- <meta property="se:url.authority.nacoaf" refines="#artist">COVER_ARTIST_NACOAF_URI</meta> -->
-		<!-- <meta property="role" refines="#artist" scheme="marc:relators">art</meta>
-		<dc:contributor id="transcriber-1">TRANSCRIBER</dc:contributor>
-		<meta property="file-as" refines="#transcriber-1">TRANSCRIBER_SORT</meta>
-		<meta property="se:url.homepage" refines="#transcriber-1">TRANSCRIBER_URL</meta>
-		<meta property="role" refines="#transcriber-1" scheme="marc:relators">trc</meta> -->
+		<meta property="role" refines="#artist" scheme="marc:relators">art</meta>
+		<!-- TRANSLATION -->
+		<dc:contributor id="translator-1">Anonima</dc:contributor>
+		<meta property="file-as" refines="#translator-1">Anonima</meta>
+		<meta property="role" refines="#translator-1" scheme="marc:relators">trl</meta>
+		<dc:contributor id="translator-2">Paul King</dc:contributor>
+		<meta property="file-as" refines="#translator-2">King, Paul</meta>
+		<meta property="role" refines="#translator-2" scheme="marc:relators">trl</meta>
+		<!-- PRODUCTION -->
 		<dc:contributor id="producer-1">Paul King</dc:contributor>
 		<meta property="file-as" refines="#producer-1">King, Paul</meta>
 		<meta property="se:url.homepage" refines="#producer-1">https://kingrpaul.github.io/</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">trl</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">bkd</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">bkp</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">blw</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">cov</meta>
-		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">pfr</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mdc</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">mrk</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">pbl</meta>
 		<meta property="role" refines="#producer-1" scheme="marc:relators">tyg</meta>
-		<meta property="role" refines="#author" scheme="marc:relators">wat</meta>
+		<meta property="role" refines="#producer-1" scheme="marc:relators">wat</meta>
 	</metadata>
 	<manifest>
 		<item href="css/core.css" id="core.css" media-type="text/css"/>
@@ -99,7 +101,7 @@
 		<itemref idref="imprint.xhtml"/>
 		<itemref idref="memoro.xhtml"/>
 		<itemref idref="memory.xhtml"/>
-		<itemref idref="colophon.xhtml"/>		
+		<itemref idref="colophon.xhtml"/>
 		<itemref idref="uncopyright.xhtml"/>
 	</spine>
 </package>
